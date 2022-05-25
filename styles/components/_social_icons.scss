@@ -1,4 +1,5 @@
 @use "../base/variables";
+@use "../base/mixins";
 
 .social__links {
     text-decoration: none;
@@ -7,17 +8,17 @@
 .social__icons {
     color: variables.$color-emerald;
     font-size: 25px;
-    margin-right: 31px ;
+    margin-right: 31px;
 
-    &:hover{
+    @include mixins.mobile {
+        margin-bottom: 20px;
+        margin: auto;
+        padding: 15px;
+    }
+
+    &:hover {
         color: variables.$color-ghost;
         transform: scale(1.5, 1.5) rotate(15deg);
         transition: 0.5s
     }
 }
-
-
-
-
-
-

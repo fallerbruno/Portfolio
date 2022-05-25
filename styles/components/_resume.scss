@@ -1,16 +1,18 @@
 @use "../components/button";
 @use "../components/social_icons";
 @use "../base/variables";
+@use "../base/mixins";
+
 .resumo {
 
-   
+
 
     &__text {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
 
         &__title {
             margin-top: 50px;
@@ -19,6 +21,9 @@
             line-height: 30px;
             font-style: italic;
             font-family: 'Press Start 2P';
+            @include mixins.mobile {
+                font-size: 18px;
+            }
         }
 
         &__paragraph {
@@ -26,6 +31,9 @@
             font-size: 20px;
             line-height: 30px;
             font-weight: 400;
+            @include mixins.mobile {
+                font-size: 16px;
+            }
         }
     }
 
@@ -36,9 +44,25 @@
         align-items: center;
         justify-items: center;
 
-        &__button {
-            margin-left: 12px;
+        @include mixins.mobile {
+            display: block;
+            margin-left: 0px;
+            text-align: center;
+            margin-top: 0px;
             
+        }
+        
+        &__button {
+
+            margin-left: 12px;
+
+            @include mixins.mobile {
+                display: block;
+                margin: auto;
+                margin-top: 20px;
+
+
+            }
         }
     }
 }
