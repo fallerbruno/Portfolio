@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +11,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./imagens/logo/logo.png">
     <link rel="stylesheet" href="styles/base/reset.css">
-    <link rel="stylesheet" href="styles/layaout/projetos.css">
+    <link rel="stylesheet" href="styles/layaout/projetos.min.css">
     <title>Projetos Bruno Faller</title>
 </head>
+
 <body>
     <header class="header">
+
+        <label class="header__toggle" for="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input id="hamburger" type="checkbox" class="header__check">
+
         <img class="header__logo" src="imagens/logo/logo.png">
 
         <nav class="header__menu">
-
-            <a class="header__menu__item"  href="index.html">Home</a>
+            <a class="header__menu__item " href="index.html">Home</a>
             <a class="header__menu__item" href="sobre.html">Sobre</a>
-            <a class="header__menu__item header__menu__item--active" href="projetos.html">Projetos</a>
-            <a class="header__menu__item" href="contato.html">Contato</a>
+            <a class="header__menu__item header__menu__item--activex" href="projetos.html">Projetos</a>
+            <a class="header__menu__item " href="contato.html">Contato</a>
         </nav>
     </header>
+
     <section class="projetos">
         <h1 class="projetos__title">Projetos</h1>
         <p class="projetos__text">Alguns projetos finalizados até o momento.</p>
@@ -33,26 +42,29 @@
     </section>
 
     <section class="projetos__finished">
-        <img class="projetos__finished__img" src="./imagens/projetos/crieflix.png" >
+        <img class="projetos__finished__img" src="./imagens/projetos/crieflix.png">
         <h2 class="projetos__finished__title">CrieFlix</h2>
         <p class="projetos__finished__text">
-            CrieFlix é um projeto feito junto com o Professor da disciplina de web do curso CRIE_TI onde aprendemos a desenvolver o site com HTML e CSS
+            CrieFlix é um projeto feito junto com o Professor da disciplina de web do curso CRIE_TI onde aprendemos a
+            desenvolver o site com HTML e CSS
             e utilizando a mesma estrutura html fizemos a versão mobile.
         </p>
     </section>
 
     <section class="projetos__finished">
-        <img class="projetos__finished__img" src="./imagens/projetos/pet.png" >
+        <img class="projetos__finished__img" src="./imagens/projetos/pet.png">
         <h2 class="projetos__finished__title">PetShop</h2>
-        <p class="projetos__finished__text">Primeiro Projeto desenvolvido para a disciplina de web do curso CRIE_TI, onde fomos desafiados e fazer um site com a mesma estrutura
+        <p class="projetos__finished__text">Primeiro Projeto desenvolvido para a disciplina de web do curso CRIE_TI,
+            onde fomos desafiados e fazer um site com a mesma estrutura
             que havia nos prints disponbilizados.
         </p>
     </section>
 
     <section class="projetos__finished">
-        <img class="projetos__finished__img" src="./imagens/projetos/olaria.png" >
+        <img class="projetos__finished__img" src="./imagens/projetos/olaria.png">
         <h2 class="projetos__finished__title">Olaria Alegria</h2>
-        <p class="projetos__finished__text">Primeiro Projeto feito  junto com professor da disciplina de web do curso CRIE_TI, onde aprendemos a utilizar os diferentes tipos de CSS e estruturas HTML</p>
+        <p class="projetos__finished__text">Primeiro Projeto feito junto com professor da disciplina de web do curso
+            CRIE_TI, onde aprendemos a utilizar os diferentes tipos de CSS e estruturas HTML</p>
     </section>
 
 

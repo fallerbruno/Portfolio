@@ -223,7 +223,9 @@ body {
   border: none;
 }
 .button:hover {
-  color: #31cd31;
+  background-color: #52c678;
+  transform: scale(1.2, 1.2);
+  transition: 0.5s;
 }
 
 .social__links {
@@ -311,6 +313,11 @@ body {
   line-height: 57px;
   margin-bottom: 40px;
   font-family: "Press Start 2P";
+}
+@media only screen and (max-width: 480px) {
+  .about__title {
+    font-size: 20px;
+  }
 }
 .about__title:hover {
   background: rgba(49, 205, 49, 0.01);
