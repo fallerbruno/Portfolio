@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Chakra Petch";
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #363432;
+  margin-left: 283px;
+  margin-right: 283px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 72px;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #363432;
+  border-bottom: 3px solid #52c678;
+}
+.header__logo {
+  width: 80px;
+  margin-left: 180px;
+}
+.header__menu {
+  display: inline-block;
+  margin-right: 180px;
+  font-family: "Press Start 2P";
+  font-size: 14px;
+}
+.header__menu__item {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 53px;
+}
+.header__menu__item--active {
+  background-color: #cffcce;
+  padding: 8px;
+  color: #0A070B;
+}
+.header__menu__item:hover {
+  color: #52c678;
+  transition: 0.5s;
+  background: rgba(49, 205, 49, 0.01);
+}
+
+.footer__ajust {
+  display: flex;
+  border-top: 3px solid #52c678;
+  margin-left: -283px;
+  margin-right: -283px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+  height: 100px;
+}
+.footer__logo {
+  width: 80px;
+  margin-left: 183px;
+}
+.footer__social {
+  align-items: center;
+  margin-right: 183px;
+}
+.footer__copy {
+  display: block;
+  text-align: center;
+  font-family: "Chakra Petch";
+}
+
+.button {
+  width: 144px;
+  height: 40px;
+  font-family: "Chakra Petch";
+  line-height: 20px;
+  border-radius: 50px;
+  color: #0A070B;
+  background-color: #cffcce;
+  text-decoration: none;
+  border: none;
+}
+.button:hover {
+  color: #31cd31;
+}
+
+.social__links {
+  text-decoration: none;
+}
+
+.social__icons {
+  color: #52c678;
+  font-size: 25px;
+  margin-right: 31px;
+}
+.social__icons:hover {
+  color: #cffcce;
+  transform: scale(1.5, 1.5) rotate(15deg);
+  transition: 0.5s;
+}
+
+.jobs__title {
+  font-size: 34px;
+  margin-bottom: 10px;
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+.jobs__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.jobs__list__about {
+  margin-top: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.jobs__list__description {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.jobs__allign {
+  display: inline-block;
+}
+
+.curses__title {
+  font-size: 34px;
+  margin-bottom: 10px;
+  margin-top: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+.curses__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.curses__list__about {
+  margin-top: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.curses__list__description {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.curses__allign {
+  display: inline-block;
+}
+
+.about {
+  margin-top: 152px;
+}
+.about__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 57px;
+  margin-bottom: 40px;
+  font-family: "Press Start 2P";
+}
+.about__title:hover {
+  background: rgba(49, 205, 49, 0.01);
+  color: #52c678;
+  transition: 0.5s;
+}
+.about__text {
+  margin-bottom: 60px;
+  line-height: 31px;
+}/*# sourceMappingURL=sobre.css.map */

@@ -1,0 +1,28 @@
+@use "../base/variables";
+@use "../components/jobs";
+@use "../components/curses";
+
+.about {
+    margin-top: 152px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 57px;
+        margin-bottom: 40px;
+        font-family: 'Press Start 2P';
+
+            &:hover{
+                background: rgba(49, 205, 49, .01);
+                color: variables.$color-emerald;
+                transition: 0.5s;
+            }
+        }
+
+    &__text {
+        margin-bottom: 60px ;
+        line-height: 31px;    
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/69970a57fe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/layaout/contato.css">com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+    <title>Contato Bruno Faller</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="imagens/logo/logo.png">
+
+        <nav class="header__menu">
+
+            <a class="header__menu__item" href="index.html">Home</a>
+            <a class="header__menu__item" href="sobre.html">Sobre</a>
+            <a class="header__menu__item" href="projetos.html">Projetos</a>
+            <a class="header__menu__item header__menu__item--active"  href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <section class="contato">
+        <h1 class="contato__title">Fale Comigo</h1>
+        <p class="contato__text">Estou aberto a conversar sobre novos projetos e conhecer novas pessoas para troca de experiencias.
+            Caso tenha interesse de entrar em contato segue abaixo alguns canais de comunicação.
+        </p>
+        <a class="contato__phone" href="tel:+5551997230366"> (51) 997230366</a>
+        <a class="contato__email" href="email:fallerbruno@gmail.com"> fallerbruno@gmail.com </a>
+    </section>
+    <hr>
+    <form class="contato__form">
+        <div class="contato__form__align">
+            <div class="contato__form__size"> 
+                <label  for="name">Nome </label>
+                <br>
+                <input class="contato__form__align__input" id="name" placeholder="Nome">
+                <br>
+                <label for="e-mail">E-mail</label>
+                <br>
+                <input class="contato__form__align__input"  id="e-mail" type="email" placeholder="E-mail">
+                <br>
+            </div>
+            <div class="contato__form__size">
+            <label for="phone">Telefone</label>
+            <br>
+            <input class="contato__form__align__input"  id="phone" type="tel" placeholder="Telefone">
+            <br>
+            <label for="assunto">Assunto</label>
+            <br>
+            <input class="contato__form__align__input"  id="assunto" type="text" placeholder="Assunto">
+            <br>
+        </div>
+        </div>
+        <label for="text area">Mensagem</label><br>
+        <textarea  class="contato__form__textarea"    name="text area" id="text area" placeholder="Escreva sua Mensagem" cols="30" rows="20"></textarea><br>
+        <input type="submit" class="button" value="Enviar" id="submit">
+    </form>
+
+    <footer class="footer">
+        <div class="footer__ajust">
+            <img class="footer__logo" src="imagens/logo/logo.png">
+            <div class="footer__social">
+                <a class="social__links footer__social__links" href="https://t.me/fallerbruno">
+                    <i class="social__icons fa-brands fa-telegram"></i>
+                </a>
+
+                <a class="social__links footer__social__links " href="https://www.facebook.com/fallerbruno/">
+                    <i class=" social__icons fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a class="social__links footer__social__links" href="https://github.com/fallerbruno">
+                    <i class=" social__icons fa-brands fa-github"></i>
+                </a>
+
+                <a class="social__links footer__social__links" href="https://www.instagram.com/brunofaller/">
+                    <i class="social__icons__footer social__icons fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <span class="footer__copy">
+            &copy;2022 Todos direitos reservados
+        </span>
+
+    </footer>
+
+</body>
+
+</html>

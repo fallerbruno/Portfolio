@@ -1,0 +1,23 @@
+@use "../base/variables";
+
+.social__links {
+    text-decoration: none;
+}
+
+.social__icons {
+    color: variables.$color-emerald;
+    font-size: 25px;
+    margin-right: 31px ;
+
+    &:hover{
+        color: variables.$color-ghost;
+        transform: scale(1.5, 1.5) rotate(15deg);
+        transition: 0.5s
+    }
+}
+
+
+
+
+
+

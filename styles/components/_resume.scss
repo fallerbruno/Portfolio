@@ -1,0 +1,44 @@
+@use "../components/button";
+@use "../components/social_icons";
+@use "../base/variables";
+.resumo {
+
+   
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        &__title {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            line-height: 30px;
+            font-style: italic;
+            font-family: 'Press Start 2P';
+        }
+
+        &__paragraph {
+            margin: 20px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+    }
+
+    &__social {
+        margin-top: 50px;
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        &__button {
+            margin-left: 12px;
+            
+        }
+    }
+}

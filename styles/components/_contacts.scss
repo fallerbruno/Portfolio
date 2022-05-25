@@ -1,0 +1,82 @@
+@use "../base/variables";
+
+.contato {
+    margin-top: 152px;
+    margin-bottom: 40px;
+
+    &__title {
+        font-size: 34px;
+        line-height: 57px;
+        font-family: 'Press Start 2P';
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__phone {
+        display: block;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    &__email {
+        margin-bottom: 80px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+
+    }
+
+    &__form {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 80px;
+
+        &__size{
+            width: 1000px;
+          
+        }
+        &__align {
+            display: flex;
+            
+            &__input {
+                caret-color: variables.$color-emerald;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                width: 90%;
+                height: 40px;
+                border-radius: 10px;
+
+                &:focus{
+                    border: none;    outline: none !important;     box-shadow: 0 0 3px 2px #52c678; 
+                }
+                &::placeholder{
+                    color: variables.$color-emerald;
+                }
+            }
+        }
+        &__textarea {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            width: 95%;
+            height: 100px;
+            border-radius: 10px;
+
+            &:focus{
+                border: none;    outline: none !important;     box-shadow: 0 0 3px 2px #52c678; 
+            }
+            &::placeholder{
+                color: variables.$color-emerald;
+            }
+           
+        }
+
+    }
+
+}
