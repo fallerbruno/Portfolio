@@ -54,6 +54,9 @@
             height: 700px;
             object-fit:cover;
             object-position: 0 0;
+
+            @include mixins.mobile {
+                max-height: 350px;
         }
 
         &__title {
@@ -83,4 +86,5 @@
         }
     }
 
+}
 }
