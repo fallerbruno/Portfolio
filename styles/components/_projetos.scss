@@ -20,7 +20,7 @@
             color: variables.$color-emerald;
             transition: 0.5s;
             background: rgba(49, 205, 49, .01);
-          }
+        }
 
         @include mixins.mobile {
             font-size: 20px;
@@ -52,11 +52,12 @@
             width: 100%;
             border-radius: 10px;
             height: 700px;
-            object-fit:cover;
+            object-fit: cover;
             object-position: 0 0;
 
             @include mixins.mobile {
                 max-height: 340px;
+            }
         }
 
         &__title {
@@ -86,5 +87,4 @@
         }
     }
 
-}
 }
