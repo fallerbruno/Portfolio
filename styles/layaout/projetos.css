@@ -378,7 +378,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .projetos__finished__img {
-    max-height: 350px;
+    max-height: 340px;
   }
 }
 .projetos__finished__img__title {
